@@ -1,7 +1,5 @@
 /*************************************************************************
 	> File Name: test.cpp
-	> Author: huguang
-	> Mail: hug@haizeix.com
 	> Created Time: 
  ************************************************************************/
 
@@ -34,6 +32,8 @@ TEST(test1, add) {
 TEST(test2, add) {
     EXPECT_EQ(add(4, 4), 8); // ==
     EXPECT_NE(add(4, 4), 8); // !=
+    EXPECT_EQ(add(3, 4), 7); // ==
+    EXPECT_NE(add(3, 4), 7); // !=
     EXPECT_LT(add(3, 4), 8); // <
     EXPECT_LE(add(3, 4), 7); // <=
     EXPECT_GT(add(3, 4), 6); // >
